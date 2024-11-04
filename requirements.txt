@@ -1,0 +1,8 @@
+Django>=4.2
+djangorestframework
+django-allauth
+gunicorn
+psycopg2-binary
+mysqlclient
+Pillow
+django-environ
