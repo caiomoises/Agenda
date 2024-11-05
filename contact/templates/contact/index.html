@@ -21,22 +21,25 @@
         <tbody>
             {% for contact in contacts %}
                 <tr class="table-row">
-                    <td class="table-data">
-                        {{contact.id}}
+                    <td class="table-cel">
+                        <a class="table-link" 
+                        href="{% url 'contact:contact' contact.id %}">
+                            {{contact.id}}
+                        </a>
                     </td>
-                    <td class="table-data">
+                    <td class="table-cel">
                         {{contact.first_name}}
                     </td>
-                    <td class="table-data">
+                    <td class="table-cel">
                         {{contact.last_name}}
                     </td>
-                    <td class="table-data">
+                    <td class="table-cel">
                         {{contact.phone}}
                     </td>
-                    <td class="table-data">
+                    <td class="table-cel">
                         {{contact.email}}
                     </td>
-                    <td class="table-data">
+                    <td class="table-cel">
                         {{contact.category}}
                     </td>
                 </tr>
