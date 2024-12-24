@@ -24,11 +24,12 @@
         method="GET"
       >
         <input 
-        type="search" 
-        class="search-input"
-        placeholder="Pesquisar"
-        id="search"
-        name="q"
+          type="search" 
+          class="search-input"
+          placeholder="Pesquisar"
+          id="search"
+          name="q"
+          value="{{ request.GET.q.strip }}"
         >
       </form>
     </div>
